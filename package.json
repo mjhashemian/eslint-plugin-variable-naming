@@ -1,18 +1,53 @@
 {
   "name": "eslint-plugin-variable-naming",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "ESLint plugin to enforce consistent variable naming conventions with full configurability",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "naming",
+    "convention",
+    "variable-naming",
+    "camelCase",
+    "PascalCase",
+    "snake_case",
+    "typescript"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjhashemian/eslint-plugin-variable-naming.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mjhashemian/eslint-plugin-variable-naming/issues"
+  },
+  "homepage": "https://github.com/mjhashemian/eslint-plugin-variable-naming#readme",
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "eslint": "^8.0.0 || ^9.0.0",
+    "typescript": ">=4.7.4"
+  },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.48.0",
     "@typescript-eslint/utils": "^8.48.0",
     "eslint": "^9.39.1",
     "typescript": "^5.9.3"
-  }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
 }
